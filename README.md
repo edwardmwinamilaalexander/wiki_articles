@@ -1,24 +1,17 @@
+
 # README
+**A simple RoR web application  where any user can create a new article or update an existing one**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Tech stack used:**
 
-Things you may want to cover:
+### BackEnd
+- Ruby on Rails 8.0.2
 
-* Ruby version
+### FrontEnd
+- Bootstrap  CDN
+- Font Awesome CDN
 
-* System dependencies
+## Gems
+- simple_form
+- faker
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
