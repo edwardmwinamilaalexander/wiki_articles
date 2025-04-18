@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 offset-md-2"> <!-- This centers the content -->
+      <% @articles.each do |article| %>
+        <div>
+          <h3><%= link_to article.title, article_path(article) %></h3>
+          <p><%= article.content %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

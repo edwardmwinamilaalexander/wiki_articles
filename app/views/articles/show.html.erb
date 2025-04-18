@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 offset-md-2"> <!-- This centers the content -->
+      <div>
+        <p><%= @article.content %>
+          <!-- Edit link with Font Awesome pencil icon -->
+          <%= link_to '<i class="fa-solid fa-pen"></i>'.html_safe, edit_article_path(@article) %>
+          <!-- Delete link with Font Awesome trash icon -->
+          <%= link_to '<i class="fa-regular fa-trash-can"></i>'.html_safe, article_path(@article),
+           data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-4">
+    <%= link_to '<i class="fa-solid fa-rotate-left"></i> Back to list'.html_safe, articles_path %>
+  </div>

@@ -1,0 +1,13 @@
+
+<div class="container">
+  <div class="row">
+    <div class="md-8 offset-2">
+    <h2>New article</h2>
+    <%= simple_form_for @article do |f| %>
+      <%= f.input :title %>
+      <%= f.input :content %>
+      <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+    </div>
+  </div>
+</div>
